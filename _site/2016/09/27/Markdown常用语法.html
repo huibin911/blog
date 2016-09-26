@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Markdown常用语法</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Markdown常用语法.html</title>
   <meta name="generator" content="Haroopad 0.13.1" />
@@ -14,28 +21,89 @@
 </blockquote><ul>
 <li>斜体<br>斜体的语法为在文字周围加一个星号(*)。如下所示：<pre><code data-origin="<pre><code>*斜体*
 </code></pre>">*斜体*
-</code></pre></li><li>加粗<br>加粗的语法为在文字周围加两个星号(**)。如下所示：<pre><code data-origin="<pre><code>**加粗**
+</code></pre></li><li><p>加粗<br>加粗的语法为在文字周围加两个星号(**)。如下所示：</p>
+<pre><code data-origin="<pre><code>**加粗**
 </code></pre>">**加粗**
+</code></pre></li><li><p>删除线<br>使用两个波浪线将需设置删除线的文字括起来。<br><del>strikethrough</del>的格式如下所示：</p>
+<pre><code data-origin="<pre><code>~~strikethrough~~
+</code></pre>">~~strikethrough~~
 </code></pre></li></ul><h2 id="2-超链接"><a name="2-超链接" href="#2-超链接"></a>2 超链接</h2><p>超链接有以下两种风格：</p><ul>
 <li><p>内联（Inline）风格<br>此种风格将链接地址直接内联到链接名称后，用圆括号括起。<br>如超链接 <a href="http://www.baidu.com" title="百度">百度主页</a> 的语法如下：</p>
 <pre><code data-origin="<pre><code>[百度主页](http://www.baidu.com &quot;百度&quot;)
 </code></pre>">[百度主页](http://www.baidu.com "百度")
-</code></pre></li><li><p>引用（Reference）风格<br>此种风格使用id指定链接地址，使得正文中可以不再插入链接地址，使得正文更加简洁。其用法如下{不包括最后的圆点(.)符号}：</p>
-<pre><code data-origin="<pre><code>[百度名称][id]
-[id]: http://www.baidu.com &quot;百度&quot;.
-</code></pre>">[百度名称][id]
-[id]: http://www.baidu.com "百度".
+</code></pre></li><li><p>引用（Reference）风格<br>此种风格使用id指定链接地址，使用正文中可以不再插入链接地址，因此，可以使得正文更加简洁。其用法如下{不包括最后的圆点(.)符号}：</p>
+<pre><code data-origin="<pre><code>[链接名称][id]
+[id]:http://www.baidu.com &quot;百度&quot;.
+</code></pre>">[链接名称][id]
+[id]:http://www.baidu.com "百度".
 </code></pre></li></ul><h2 id="3-代码块"><a name="3-代码块" href="#3-代码块"></a>3 代码块</h2><p>代码块包括单行和多行两种：</p><ul>
 <li>单行代码块<br>使用重音符符号（`）将代码括起来。如下所示：<pre><code data-origin="<pre><code>`#include &amp;lt;stdio.h&amp;gt;`
 </code></pre>">`#include &lt;stdio.h&gt;`
-</code></pre></li><li>多行代码块<br>使用三个重音符符号将代码括起来。如下所示：<pre><code data-origin="<pre><code>```
+</code></pre></li><li>多行代码块<br>使用三个重音符符号将代码括起来。如下所示(重音符间没有空格)：<pre><code data-origin="<pre><code>```
 #include &amp;lt;stdio.h&amp;gt;
 #include &amp;lt;math.h&amp;gt;
+`` `
 </code></pre>">```
 #include &lt;stdio.h&gt;
 #include &lt;math.h&gt;
-</code></pre>```</li></ul>
+`` `
+</code></pre></li></ul><h2 id="4-图片"><a name="4-图片" href="#4-图片"></a>4 图片</h2><p>与插入链接相同，文档中插入图片也有两种风格。</p><ul>
+<li><p>内联（Inline）风格<br><img src="http://pad.haroopress.com/assets/images/logo-small.png" alt="Alt txt" title="haroopad"><br>上图的Markdown代码如下：</p>
+<pre><code data-origin="<pre><code>![Alt txt](http://pad.haroopress.com/assets/images/logo-small.png &quot;haroopad&quot;)
+</code></pre>">![Alt txt](http://pad.haroopress.com/assets/images/logo-small.png "haroopad")
+</code></pre><blockquote>
+<p>Alt txt：为图片无法加载时显示的文字。括号中是图片地址及浮动文字。</p>
+</blockquote>
+</li><li><p>引用（Reference）风格<br><img src="http://pad.haroopress.com/assets/images/logo-small.png" alt="Alt txt" title="haroopad"></p>
+</li></ul><p>引用风格的Markdown代码如下：</p><pre><code data-origin="<pre><code>![Alt txt][logo]
+[logo]: http://pad.haroopress.com/assets/images/logo-small.png &quot;haroopad&quot;
+</code></pre>">![Alt txt][logo]
+[logo]: http://pad.haroopress.com/assets/images/logo-small.png "haroopad"
+</code></pre><h2 id="5-标题样式"><a name="5-标题样式" href="#5-标题样式"></a>5 标题样式</h2><p>标题样式较为简单，使用“#”号即可。如下所示：</p><pre><code data-origin="<pre><code># 一级标题
+## 二级标题
+...
+###### 六级标题
+</code></pre>"># 一级标题
+## 二级标题
+...
+###### 六级标题
+</code></pre><h2 id="6-列表"><a name="6-列表" href="#6-列表"></a>6 列表</h2><ul>
+<li>有序列表（编号）<ol>
+<li>red</li><li>blue</li><li>green<br>以上列表的语法如下：</li></ol>
+</li></ul><pre><code data-origin="<pre><code>    1. red
+    2. blue
+    3. green
+</code></pre>">    1. red
+    2. blue
+    3. green
+</code></pre><ul>
+<li>无序列表<ul>
+<li>red</li><li>blue</li><li>green<br>以上列表的语法如下：</li></ul>
+</li></ul><pre><code data-origin="<pre><code>    + red
+    + blue
+    + green
+</code></pre>">    + red
+    + blue
+    + green
+</code></pre><blockquote>
+<ul>
+<li>除加号（+）可能标记无序列表外，也可使用减号（-）或星号（*）代替。</li><li>有序列表与无序列表可以嵌套使用。</li><li>使用制表符（Tab）缩进，可以实现多级列表。</li></ul>
+</blockquote><h2 id="7-块引用（blockquotes）"><a name="7-块引用（blockquotes）" href="#7-块引用（blockquotes）"></a>7 块引用（Blockquotes）</h2><p>块引用样式如下：</p><blockquote>
+<p>This is Blockquotes.</p>
+</blockquote><p>其语法格式如下：</p><pre><code data-origin="<pre><code>&amp;gt; This is Blockquotes.
+</code></pre>">&gt; This is Blockquotes.
+</code></pre><h2 id="8-任务列表"><a name="8-任务列表" href="#8-任务列表"></a>8 任务列表</h2><p>可用来创建TODO list。</p><ul>
+<li style="list-style: none"><input type="checkbox" class="task-list-item" data-task-index="0"> Running</li><li style="list-style: none"><input type="checkbox" class="task-list-item" checked="" data-task-index="1"> Reading</li><li style="list-style: none"><input type="checkbox" class="task-list-item" data-task-index="2"> Take a shower</li></ul><p>以上任务列表的语法如下所示：</p><pre><code data-origin="<pre><code>- [ ] Running
+- [x] Reading
+- [ ] Take a shower
+</code></pre>">- [ ] Running
+- [x] Reading
+- [ ] Take a shower
+</code></pre>
 
 <footer style="position:fixed; font-size:.8em; text-align:right; bottom:0px; margin-left:-25px; height:20px; width:100%;">generated by <a href="http://pad.haroopress.com" target="_blank">haroopad</a></footer>
+</body>
+</html>
+
 </body>
 </html>
